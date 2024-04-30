@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #9370DB; /* Ð¡Ð¸Ñ€ÐµÐ½ÐµÐ²Ñ‹Ð¹ Ñ„Ð¾Ð½ */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 20px; /* ÐžÐ²Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ñ„Ð¾Ñ€Ð¼Ñ‹ */
+    background-color: #fff; /* Ð¡Ð¸Ñ€ÐµÐ½ÐµÐ²Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ */
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content h2 {
+    color: #9370DB; /* Ð¡Ð¸Ñ€ÐµÐ½ÐµÐ²Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ */
+}
+
+.tab-content:target {
+    display: block;
+}
+
+.control-segment {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F8FF; /* Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° ÑÐµÐ³Ð¼ÐµÐ½Ñ‚Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ */
+    padding: 20px;
+    border: 1px solid #ddd; /* ÐŸÐ¾Ð´Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°Ð½Ð¸Ðµ Ð´Ð»Ñ ÐºÐ¾Ð½Ñ‚Ñ€Ð°ÑÑ‚Ð° */
+}
+
+.section {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #b298ff; /* Ð¡Ð¸Ñ€ÐµÐ½ÐµÐ²Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð¹ ÑÐµÐºÑ†Ð¸Ð¸ */
+    text-align: center;
+}
+
+.section h2 {
+    color: #fff; /* Ð‘ÐµÐ»Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ð´Ð»Ñ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ° */
+}
+
+.section p {
+    color: #000; /* Ð§ÐµÑ€Ð½Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ð´Ð»Ñ Ñ‚ÐµÐºÑÑ‚Ð° */
+}
+
+.schedule {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Ð¦Ð²ÐµÑ‚ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ° */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Ð¡ÐµÑ€Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ */
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2; /* Ð¡Ð²ÐµÑ‚Ð»Ð¾-ÑÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¾Ð² */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Ð¡Ð²ÐµÑ‚Ð»Ð¾-ÑÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÑ‚Ñ€Ð¾Ðº */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Ð¡ÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð¿Ñ€Ð¸ Ð½Ð°Ð²ÐµÐ´ÐµÐ½Ð¸Ð¸ Ð½Ð° ÑÑ‚Ñ€Ð¾ÐºÑƒ */
+}
+
+table th, table td {
+    text-align: left;
+}
+
+.teacher-dialog {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.teacher-info {
+    background-color: #f2f2f2; /* Ð¡Ð²ÐµÑ‚Ð»Ð¾-ÑÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¾Ð± ÑƒÑ‡Ð¸Ñ‚ÐµÐ»Ðµ */
+    padding: 10px;
+    text-align: center;
+}
+
+.teacher-info img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.teacher-info h3 {
+    margin-top: 5px;
+    color: #333; /* Ð§ÐµÑ€Ð½Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° */
+}
+
+.messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.message {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    overflow-wrap: break-word;
+}
+
+.received {
+    background-color: #f2f2f2; /* Ð¡Ð²ÐµÑ‚Ð»Ð¾-ÑÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð½ÑÑ‚Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ */
+    float: left;
+}
+
+.sent {
+    background-color: #007bff; /* Ð¡Ð¸Ð½Ð¸Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ */
+    color: #fff; /* Ð‘ÐµÐ»Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° */
+    float: right;
+}
+
+.message img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.input-area {
+    padding: 10px;
+    background-color: #f9f9f9; /* Ð¡Ð²ÐµÑ‚Ð»Ð¾-ÑÐµÑ€Ñ‹Ð¹ Ñ„Ð¾Ð½ Ð´Ð»Ñ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸ Ð²Ð²Ð¾Ð´Ð° */
+    border-top: 1px solid #ccc;
+}
+
+.input-area input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.input-area input[type="file"] {
+    margin-right: 5px;
+}
+
+.input-area button {
+    width: 80px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Ð¡Ð¸Ð½Ð¸Ð¹ Ñ†Ð²ÐµÑ‚ ÐºÐ½Ð¾Ð¿ÐºÐ¸ */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-area button:hover {
+    background-color: #0056b3; /* Ð¢ÐµÐ¼Ð½Ð¾-ÑÐ¸Ð½Ð¸Ð¹ Ñ†Ð²ÐµÑ‚ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð¿Ñ€Ð¸ Ð½Ð°Ð²ÐµÐ´ÐµÐ½Ð¸Ð¸ */
+}
+
+.message img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* ÐÐ¾Ð²Ñ‹Ðµ ÑÑ‚Ð¸Ð»Ð¸ */
+.received img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.behavior-notifications {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333; /* Ð§ÐµÑ€Ð½Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° */
+}
+
+.notifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notifications-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.date {
+    color: #666; /* Ð¡ÐµÑ€Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ð´Ð»Ñ Ð´Ð°Ñ‚Ñ‹ */
+}
+
+p {
+    margin: 0;
+}
+
+
+
+function sendMessage() {
+    var input = document.querySelector('.input-area input[type="text"]');
+    var messageText = input.value.trim();
+    
+    if (messageText !== '') {
+        var messages = document.querySelector('.messages');
+        var message = document.createElement('div');
+        message.classList.add('message', 'sent');
+        message.innerHTML = '<p>' + messageText + '</p>';
+        messages.appendChild(message);
+        
+        input.value = '';
+        
+        // Ð¡Ð¸Ð¼ÑƒÐ»ÑÑ†Ð¸Ñ Ð¾Ñ‚Ð²ÐµÑ‚Ð° ÑƒÑ‡Ð¸Ñ‚ÐµÐ»Ñ (Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ)
+        setTimeout(function() {
+            var replyMessage = document.createElement('div');
+            replyMessage.classList.add('message', 'received');
+            replyMessage.innerHTML = '<p><img src="https://www.meme-arsenal.com/memes/855a7b22c3d1d269a97eea0ad007b74d.jpg" alt="Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ"></p>';
+            messages.appendChild(replyMessage);
+        }, 1000);
+    }
+}
