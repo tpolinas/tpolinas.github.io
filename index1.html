@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал школы</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main-menu">Главное меню</a></li>
+                <li><a href="#schedule">Расписание занятий</a></li>
+                <li><a href="#notifications">Панель уведомлений</a></li>
+                <li><a href="#teacher-dialog">Диалог с учителем</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="tab-content" id="main-menu">
+        <h2>Главное меню</h2>
+        <!-- Содержимое главного меню -->
+      <div class="control-segment">
+        <div class="section">
+            <h2>Итоговые оценки</h2>
+            <p>Средний балл: 4.5</p>
+            <!-- Другая информация об оценках -->
+        </div>
+        
+        <div class="section">
+            <h2>Информация о питании</h2>
+            <p>Сегодняшний обед: Каччукко, паэлья, малиновый кисель.</p>
+            <!-- Другая информация о питании -->
+        </div>
+        
+        <div class="section">
+            <h2>Время входа/выхода</h2>
+            <p>Последний вход: 09:15</p>
+            <p>Последний выход: 15:30</p>
+            <!-- Другая информация о времени входа/выхода -->
+        </div>
+    </div>
+    </div>
+
+    <div class="tab-content" id="schedule">
+        <h2>Расписание занятий</h2>
+        <!-- Содержимое расписания занятий -->
+      <div class="schedule">
+        <table>
+            <tr>
+                <th>День недели</th>
+                <th>Предмет</th>
+                <th>Домашнее задание</th>
+                <th>Оценка</th>
+            </tr>
+            <tr>
+                <td>Понедельник</td>
+                <td>Математика</td>
+                <td>Решить задачи №1-5 на странице 10</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Вторник</td>
+                <td>Русский язык</td>
+                <td>Написать сочинение на тему "Природа реальности: Что является реальностью? Существует ли объективная реальность вне нашего сознания или реальность существует только в нашем восприятии?"</td>
+                <td>5</td>
+            </tr>
+            <!-- Добавьте другие занятия с домашними заданиями и оценками -->
+        </table>
+    </div>
+    </div>
+
+    <div class="tab-content" id="notifications">
+        <h2>Панель уведомлений</h2>
+        <!-- Содержимое панели уведомлений -->
+      
+      <div class="behavior-notifications">
+        <h2>Уведомления о замечаниях по поведению</h2>
+        <ul class="notifications-list">
+            <li>
+                <span class="date">27.04.2024</span>
+                <p>Ученик Семён Аврорович Флагман опоздал на половину урока информатики.</p>
+            </li>
+            <li>
+                <span class="date">25.04.2024</span>
+                <p>Ученик Александар Татьянович Оглаевич распивал спиртные напитки на уроке.</p>
+            </li>
+            <!-- Добавьте другие уведомления -->
+          <li>
+                <span class="date">25.04.2024</span>
+                <p>Ученик Матфей Абдуллахович Флагман-Оглы жрал на уроке и не поделился с учителем.</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="tab-content" id="teacher-dialog">
+        <h2>Диалог с учителем</h2>
+        <!-- Содержимое диалога с учителем -->
+      
+      <div class="teacher-dialog">
+        <div class="teacher-info">
+            <img src="https://i1.sndcdn.com/artworks-208ocf8iM6hP8tl7-MxBBXg-t500x500.jpg" alt="Имя учителя">
+            <h3>Юрий Флагман</h3>
+        </div>
+        <div class="messages">
+            <div class="message received">
+                <p>Здравствуйте! Чем могу помочь?</p>
+            </div>
+            <!-- Добавьте другие сообщения -->
+        </div>
+        <div class="input-area">
+            <input type="text" placeholder="Введите сообщение...">
+            <input type="file" id="imgInput" accept="image/*">
+            <button onclick="sendMessage()">Отправить</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
