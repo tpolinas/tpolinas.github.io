@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор мест</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">РэЖэДэ</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="search.html">Поиск билетов</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Выбор типа вагона и мест</h1>
+
+    <form id="seat-selection-form">
+        <label for="coach-type">Тип вагона:</label>
+        <select id="coach-type" name="coach-type" required>
+            <option value="плацкарт">Плацкарт</option>
+            <option value="купе">Купе</option>
+            <option value="люкс">Люкс</option>
+        </select>
+
+        <label for="seat-number">Номер места:</label>
+        <select id="seat-number" name="seat-number" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <button type="submit">Забронировать</button>
+    </form>
+</div>
+
+<footer>
+    <p class="footer">© 2024 Система покупки и бронирования билетов на поезд. Все права защищены.</p>
+    <p class="footer">Связаться с нами: <a href="mailto:support@ticketsystem.com">support@ticketsystem.com</a></p>
+</footer>
+
+</body>
+</html>

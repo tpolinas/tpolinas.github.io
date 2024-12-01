@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск билетов</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function showResults(event) {
+      event.preventDefault();
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = `
+        <h2>Результаты поиска</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Номер поезда</th>
+              <th>Пункт отправления</th>
+              <th>Пункт назначения</th>
+              <th>Дата</th>
+              <th>Время отправления</th>
+              <th>Цена</th>
+              <th>Выбрать</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>123A</td>
+              <td>Москва</td>
+              <td>Санкт-Петербург</td>
+              <td>2024-11-30</td>
+              <td>12:30</td>
+              <td>6000 руб</td>
+              <td><a href="choose_seat.html?train_id=123A">Выбрать</a></td>
+            </tr>
+            <tr>
+              <td>456B</td>
+              <td>Санкт-Петербург</td>
+              <td>Москва</td>
+              <td>2024-12-01</td>
+              <td>15:00</td>
+              <td>5500 руб</td>
+              <td><a href="choose_seat.html?train_id=456B">Выбрать</a></td>
+            </tr>
+          </tbody>
+        </table>
+      `;
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">РэЖэДэ</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="search.html">Поиск билетов</a></li>
+      <li><a href="profile.html">Личный кабинет</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h1>Поиск билетов на поезд</h1>
+  <form id="search-form" onsubmit="showResults(event)">
+    <label for="departure">Пункт отправления:</label>
+    <select id="departure" name="departure" required>
+      <option value="Москва">Москва</option>
+      <option value="Санкт-Петербург">Санкт-Петербург</option>
+    </select>
+
+    <label for="destination">Пункт назначения:</label>
+    <select id="destination" name="destination" required>
+      <option value="Санкт-Петербург">Санкт-Петербург</option>
+      <option value="Москва">Москва</option>
+    </select>
+
+    <label for="date">Дата отправления:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="passengers">Количество пассажиров:</label>
+    <input type="number" id="passengers" name="passengers" min="1" required>
+
+    <button type="submit">Найти билеты</button>
+  </form>
+
+  <!-- Контейнер для результатов поиска -->
+  <div id="results"></div>
+</div>
+
+<footer>
+  <p class="footer">© 2024 Система покупки и бронирования билетов на поезд. Все права защищены.</p>
+  <p class="footer">Связаться с нами: <a href="mailto:support@ticketsystem.com">support@ticketsystem.com</a></p>
+</footer>
+
+</body>
+</html>

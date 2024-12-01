@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление билета</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">РэЖэДэ</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="search.html">Поиск билетов</a></li>
+            <li><a href="bookings.html">Купить билет</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Ваши бронирования</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Номер брони</th>
+            <th>Поезд</th>
+            <th>Маршрут</th>
+            <th>Дата отправления</th>
+            <th>Место</th>
+            <th>Статус</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Динамически заполняется из базы данных -->
+        <tr>
+            <td>001245</td>
+            <td>123A</td>
+            <td>Москва — Санкт-Петербург</td>
+            <td>2024-12-01</td>
+            <td>Купе, место 5</td>
+            <td>Подтверждено</td>
+            <td><a href="cancel_booking.php?booking_id=001245" class="cancel-btn">Отменить</a></td>
+        </tr>
+        <tr>
+            <td>001246</td>
+            <td>456B</td>
+            <td>Санкт-Петербург — Москва</td>
+            <td>2024-12-05</td>
+            <td>Плацкарт, место 12</td>
+            <td>Ожидает оплаты</td>
+            <td><a href="pay_booking.php?booking_id=001246" class="pay-btn">Оплатить</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p class="footer">© 2024 Система покупки и бронирования билетов на поезд. Все права защищены.</p>
+    <p class="footer">Связаться с нами: <a href="mailto:support@ticketsystem.com">support@ticketsystem.com</a></p>
+</footer>
+
+</body>
+</html>
